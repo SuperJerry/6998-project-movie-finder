@@ -1,0 +1,45 @@
+html body {
+    background-color: #dee5df; 
+  }
+  
+  header {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  nav {
+    border-bottom: 1.5px solid #ccc; 
+    height: 65px;
+  }
+  .title {
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  #x-result-txt, #x-result-txt-1, #x-result-txt-2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: medium;
+    text-transform: uppercase;
+  }
+
+  #about, #about-1, #about-2 {
+    margin: 30px;
+  }
+
+  .copyright {
+    display:block;
+    margin-top: 100px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }

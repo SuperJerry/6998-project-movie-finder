@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Movie Finder - Result</title>
+
+<link rel="stylesheet" href="css/movielist.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="recorder.mp3.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/show-movielist.js"></script>
+<meta charset="UTF-8">
+
+<!-- <script type="text/javascript" src="apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script> -->
+<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/apigClient.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./">
+                <b>Movie Finder</b>
+            </a>
+            <form class="form-flex">
+            <a href="./index.html" class="btn btn-outline-success" role="button"><b>New Search</b></a>
+            </form>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="title">
+            <h1>Are You Looking For ...</h1>
+            <!-- <h1 id="x-result-txt"></h1> -->
+        </div>
+    </header>
+    
+    <div class="container">
+        <hr id="x-hrule" class="mb-4" style="display: none;">
+        <!-- Grid -->
+        <div id="x-grid-div" class="row justify-content-center mt-4 mx-2">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="movie-item">
+            <div class="row">
+                <h4 id="x-result-txt"></h4>
+                <div class="col-6" id="about">
+                    <h5>About the Film</h5>
+                    <p id="about-content"></p>
+                    <div class="col" id="release">
+                        <h5>Release Date</h5>
+                        <p id="release-date"></p>
+                    </div>
+                </div>
+        
+                <div class="col" id="show-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-item-1">
+            <div class="row">
+                <h4 id="x-result-txt-1"></h4>
+                <div class="col-6" id="about-1">
+                    <h5>About the Film</h5>
+                    <p id="about-content-1"></p>
+                    <div class="col" id="release-1">
+                        <h5>Release Date</h5>
+                        <p id="release-date-1"></p>
+                    </div>
+                </div>
+        
+                <div class="col" id="show-img-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-item-2">
+            <div class="row">
+                <h4 id="x-result-txt-2"></h4>
+                <div class="col-6" id="about-2">
+                    <h5>About the Film</h5>
+                    <p id="about-content-2"></p>
+                    <div class="col" id="release-2">
+                        <h5>Release Date</h5>
+                        <p id="release-date-2"></p>
+                    </div>
+                </div>
+        
+                <div class="col" id="show-img-2">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <div class="copyright">
+            By Yankai Li & Tracy Li.
+        </div>
+    </footer>
+    </body>
+    
+    </html>
+    
