@@ -16,7 +16,7 @@ $('document').ready(function() {
       cache: false,
       crossDomain: true,
       dataType: "json",
-      headers: {"x-api-key": "8vD0DcGMaD5cKrlHzhFHc5gxDKD5E7h5az4hzjNY"},
+      headers: {"x-api-key": "***"},
       error: function(res) {console.log(res)},
       success: function(res) { 
         console.log(res);
@@ -104,7 +104,7 @@ $('document').ready(function() {
       cache: false,
       crossDomain: true,
       dataType: "json",
-      headers: {"x-api-key": "8vD0DcGMaD5cKrlHzhFHc5gxDKD5E7h5az4hzjNY"},
+      headers: {"x-api-key": "***"},
       //beforeSend: function(xhr){
         // $('#x-result-txt').text(' ');
         // $('#x-hrule').css('display', 'none');
@@ -223,7 +223,7 @@ $('document').ready(function() {
       beforeSend: function(xhr){
         $('#x-success-msg').text('');
         xhr.setRequestHeader('Content-Type', fileType);
-        xhr.setRequestHeader('x-api-key', '8vD0DcGMaD5cKrlHzhFHc5gxDKD5E7h5az4hzjNY');
+        xhr.setRequestHeader('x-api-key', '***');
       },
       error: function(res) {console.log(res)},
       success: function(res) {
